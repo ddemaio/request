@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Ask the openSUSE project to sponsor an event, back a booth or stand, or host a local meetup.">
 <title>openSUSE Event Requests</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Ccircle%20cx='16'%20cy='16'%20r='15'%20fill='%2373ba25'/%3E%3Ccircle%20cx='16'%20cy='16'%20r='8'%20fill='none'%20stroke='white'%20stroke-width='2.5'/%3E%3C/svg%3E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -59,7 +59,7 @@ html{scroll-padding-top:70px}
 body{
   margin:0;background:var(--bg);color:var(--ink);
   font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased;
+  font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased;
 }
 a{color:var(--green-dark)}
 
@@ -67,7 +67,7 @@ a{color:var(--green-dark)}
 .uni{position:sticky;top:0;z-index:60;background:#173f4f;color:#fff}
 .uni-bar{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:12px;min-height:50px;padding:0 16px}
 .uni-brand{display:flex;align-items:center;gap:9px;color:#fff;text-decoration:none;font-weight:700;font-size:15px;white-space:nowrap}
-.uni-brand svg{width:28px;height:28px;display:block;flex:none}
+.uni-brand img{width:28px;height:28px;display:block;flex:none}
 .uni-links{display:flex;gap:2px;margin-left:6px}
 .uni-links a{color:#d7e6ea;text-decoration:none;font-size:13px;font-weight:600;padding:8px 10px;border-radius:6px;white-space:nowrap}
 .uni-links a:hover{background:rgba(255,255,255,.12);color:#fff}
@@ -92,51 +92,51 @@ a{color:var(--green-dark)}
 }
 
 /* ---- Page ---- */
-.wrap{max-width:900px;margin:0 auto;padding:24px 18px 80px}
-@media (max-width:380px){.wrap{padding:16px 12px 70px}}
-.intro h1{font-size:24px;margin:0 0 4px;letter-spacing:-.01em}
-.lede{color:var(--muted);margin:8px 0 20px;max-width:62ch}
+.wrap{max-width:820px;margin:0 auto;padding:18px 14px 70px}
+.intro h1{font-size:20px;margin:0 0 2px;letter-spacing:-.01em}
+.lede{color:var(--muted);font-size:14px;margin:6px 0 14px;max-width:62ch}
 .lede .travel{font-weight:600}
 
-.card{background:var(--card);border:1px solid var(--line);border-top-width:3px;border-radius:0 0 12px 12px;padding:18px;margin-bottom:18px;box-shadow:var(--shadow)}
+.card{background:var(--card);border:1px solid var(--line);border-top-width:3px;border-radius:0 0 10px 10px;padding:14px;margin-bottom:14px;box-shadow:var(--shadow)}
 .rule-1{border-top-color:var(--c1)}
 .rule-2{border-top-color:var(--c2)}
 .rule-3{border-top-color:var(--c3)}
 .rule-4{border-top-color:var(--c4)}
-.card > h2{font-size:13px;margin:0 0 4px;letter-spacing:.09em;text-transform:uppercase;color:var(--green-dark);font-variant-caps:all-small-caps}
-.card > .sub{color:var(--muted);font-size:13px;margin:0 0 16px}
+.card > h2{font-size:12px;margin:0 0 3px;letter-spacing:.09em;text-transform:uppercase;color:var(--green-dark);font-variant-caps:all-small-caps}
+.card > .sub{color:var(--muted);font-size:12.5px;margin:0 0 12px}
 
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
 @media (max-width:640px){.grid{grid-template-columns:1fr}}
 .full{grid-column:1/-1}
 
-label.f{display:block;margin-bottom:14px}
-label.f > span.lab{display:block;font-weight:600;font-size:13.5px;margin-bottom:3px}
-label.f > span.hint{display:block;color:var(--muted);font-size:12.5px;margin-bottom:5px}
-.req{color:var(--neg);font-weight:700}
+label.f{display:block;margin-bottom:10px}
+label.f > span.lab{display:block;font-weight:600;font-size:13px;margin-bottom:2px}
+label.f > span.hint{display:block;color:var(--muted);font-size:12px;margin-bottom:4px}
 input[type=text],input[type=email],input[type=url],input[type=tel],input[type=number],input[type=date],select,textarea{
-  width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:7px;
-  background:var(--bg);color:var(--ink);font:inherit;font-size:14px;
+  width:100%;padding:8px 9px;border:1px solid var(--line);border-radius:7px;
+  background:var(--bg);color:var(--ink);font:inherit;font-size:13.5px;
 }
-textarea{min-height:88px;resize:vertical}
+textarea{min-height:64px;resize:vertical}
 input:focus,select:focus,textarea:focus{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
 
-.note{background:var(--chip);border-left:3px solid var(--green);border-radius:0 8px 8px 0;padding:11px 13px;margin-bottom:14px}
-.note p{margin:0 0 8px;font-size:13px;color:var(--muted)}
+.note{background:var(--chip);border-left:3px solid var(--green);border-radius:0 8px 8px 0;padding:9px 11px;margin-bottom:10px}
+.note p{margin:0 0 6px;font-size:12.5px;color:var(--muted)}
 .note p strong{color:var(--ink)}
-.ack{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;font-weight:600}
+.ack{display:flex;gap:8px;align-items:flex-start;font-size:13px;font-weight:600}
 .ack input{margin-top:3px;flex:none;accent-color:var(--green)}
 
-fieldset{border:0;padding:0;margin:0 0 14px}
-legend{font-weight:600;font-size:13.5px;margin-bottom:6px;padding:0}
-.opts{display:flex;flex-direction:column;gap:7px}
-.opt{display:flex;gap:8px;align-items:flex-start;font-size:13.5px;color:var(--ink)}
+fieldset{border:0;padding:0;margin:0 0 10px}
+legend{font-weight:600;font-size:13px;margin-bottom:5px;padding:0}
+.opts{display:flex;flex-direction:column;gap:5px}
+.opts.grid2{display:grid;grid-template-columns:1fr 1fr;gap:5px 16px}
+@media (max-width:560px){.opts.grid2{grid-template-columns:1fr}}
+.opt{display:flex;gap:8px;align-items:flex-start;font-size:13px;color:var(--ink)}
 .opt input{margin-top:3px;flex:none;accent-color:var(--green)}
-.opt small{display:block;color:var(--muted);font-size:12px}
+.opt small{display:block;color:var(--muted);font-size:11.5px}
 
 /* assessment panel */
 .assess{position:sticky;bottom:0;z-index:5}
-.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;box-shadow:var(--shadow)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:var(--shadow)}
 .tier{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
 .badge{font-weight:700;font-size:13px;padding:5px 11px;border-radius:999px;background:var(--chip);border:1px solid var(--line)}
 .badge.ok{color:var(--pos);border-color:var(--pos)}
@@ -146,29 +146,29 @@ legend{font-weight:600;font-size:13.5px;margin-bottom:6px;padding:0}
 .meter i{display:block;height:100%;background:var(--green);width:0;transition:width .3s ease}
 ul.signals{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
 @media (max-width:640px){ul.signals{grid-template-columns:1fr}}
-ul.signals li{font-size:12.5px;color:var(--muted);display:flex;gap:7px;align-items:flex-start}
+ul.signals li{font-size:12px;color:var(--muted);display:flex;gap:7px;align-items:flex-start}
 ul.signals li b{font-weight:700;flex:none;width:1em}
 li.pos b{color:var(--pos)} li.neg b{color:var(--neg)} li.neu b{color:var(--neu)}
 
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
-button{font:inherit;font-weight:600;font-size:14px;padding:10px 18px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+button{font:inherit;font-weight:600;font-size:14px;padding:9px 14px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
 button.primary{background:var(--green);border-color:var(--green);color:#10240c}
 button:hover{filter:brightness(.97)}
 .saved{font-size:12.5px;color:var(--muted);align-self:center}
 
-footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
+footer{color:var(--muted);font-size:12px;margin-top:22px;text-align:center}
 #out{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--chip);border:1px solid var(--line);border-radius:8px;padding:12px;margin-top:14px;max-width:100%;overflow-x:auto}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 </style>
 </head>
 <body>
 
-<!-- Universe toolbar: hand-built stand-in for the shared Chameleon masthead (see README). -->
+<!-- Universe toolbar: hand-built stand-in for the shared Chameleon masthead (see README).
+     Button mark is the official artwork, loaded from favicon.svg in this repo. -->
 <nav class="uni" aria-label="openSUSE sites">
   <div class="uni-bar">
     <a class="uni-brand" href="https://www.opensuse.org/" aria-label="openSUSE home">
-      <!-- Approximate button mark: green disc + chameleon-head silhouette (placeholder, see README). -->
-      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#73ba25"/><path d="M22.5 6.5c-4.5 0-8.3 2.6-10.1 6.4L7 11.5l2.6 5.2c-.3 1-.4 2-.4 3.1 0 1.5.3 2.9.9 4.2l4.6-2.3c-.3-.6-.5-1.2-.5-1.9 0-.5.1-1 .3-1.4l3.2 1.6 1.5-3-2.3-1.1c1.2-1.6 3.1-2.6 5.2-2.6l.4 3.9 3.2-2.6-2.7-2.1c-.4-1.6-1.4-3-2.7-3.9l2.7-2.5-3.2-.6z" fill="#fff"/><circle cx="20.6" cy="10.4" r="1.1" fill="#173f4f"/></svg>
+      <img src="favicon.svg" alt="openSUSE button logo" width="28" height="28">
       <span>openSUSE</span>
     </a>
     <div class="uni-links">
@@ -217,8 +217,8 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
 
 <header class="intro">
   <h1>openSUSE Event Requests</h1>
-  <p class="lede">Use this form to ask the openSUSE project to <strong>sponsor an event</strong>, <strong>back a booth or stand</strong>, or <strong>host a local meetup</strong>. The project prioritises community-run, affordable, openly accessible events — it does not fund commercial conferences that charge attendees heavily.</p>
-  <p class="lede"><strong>This form is not for personal travel funding.</strong> Travel, accommodation and individual attendance are handled separately by the <a class="travel" href="https://en.opensuse.org/openSUSE:Travel_Support_Program">travel support programme</a> — please use that instead.</p>
+  <p class="lede">Ask the openSUSE project to <strong>sponsor an event</strong>, <strong>back a booth or stand</strong>, or <strong>host a local meetup</strong>. Priority goes to community-run, affordable, openly accessible events — not commercial conferences with heavy entry fees. Fill in what you can; nothing here is mandatory, and email is the best way to reach you.</p>
+  <p class="lede"><strong>Not for personal travel funding.</strong> Travel and accommodation go through the <a class="travel" href="https://en.opensuse.org/openSUSE:Travel_Support_Program">travel support programme</a> instead.</p>
 </header>
 
 <form id="form" novalidate>
@@ -226,29 +226,29 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
 <!-- 1. REQUEST TYPE -->
 <section class="card rule-1">
   <h2>Request type</h2>
-  <p class="sub">Pick the closest match. You can describe anything unusual in the justification further down.</p>
+  <p class="sub">Pick the closest match — details go in the justification further down.</p>
   <fieldset>
-    <legend class="sr">Request type <span class="req">*</span></legend>
+    <legend class="sr">Request type</legend>
     <div class="opts">
-      <label class="opt"><input type="radio" name="reqtype" value="Sponsor an event" checked><span><strong>Sponsor an event</strong><small>openSUSE puts money or in-kind support toward an event run by you or your community</small></span></label>
+      <label class="opt"><input type="radio" name="reqtype" value="Sponsor an event" checked><span><strong>Sponsor an event</strong><small>Money or in-kind support toward an event run by you or your community</small></span></label>
       <label class="opt"><input type="radio" name="reqtype" value="Booth / stand"><span><strong>Booth or stand</strong><small>Booth fee, banners, hardware and swag at an existing event</small></span></label>
       <label class="opt"><input type="radio" name="reqtype" value="Host a local meetup"><span><strong>Local meetup or release party</strong><small>Small, recurring, low-cost community gatherings</small></span></label>
-      <label class="opt"><input type="radio" name="reqtype" value="Materials only"><span><strong>Materials only</strong><small>Sticker packs, banners or a booth kit shipped to you — no funding needed</small></span></label>
+      <label class="opt"><input type="radio" name="reqtype" value="Materials only"><span><strong>Materials only</strong><small>Stickers, banners or a booth kit shipped to you — no funding needed</small></span></label>
     </div>
   </fieldset>
 
   <div class="note">
-    <p><strong>8-week minimum notice.</strong> Requests are funded from donations to the openSUSE project. Submit this form at least <strong>8 weeks</strong> before the event. Requests arriving later may be declined purely on timing.</p>
+    <p><strong>8-week minimum notice.</strong> Requests come from project donations — please submit at least <strong>8 weeks</strong> before the event. Later arrivals may be declined purely on timing.</p>
     <label class="ack"><input type="checkbox" name="ack1"> Acknowledge</label>
   </div>
 
   <div class="note">
-    <p><strong>Event report expected.</strong> Sponsored participants are asked to publish a short event report with photos on <em>news.opensuse.org</em> or the openSUSE forums within <strong>four weeks</strong>, and to hand back any unused funds or materials.</p>
+    <p><strong>Event report expected.</strong> Please publish a short report with photos on <em>news.opensuse.org</em> or the forums within <strong>four weeks</strong>, and hand back unused funds or materials.</p>
     <label class="ack"><input type="checkbox" name="ack2"> Acknowledge</label>
   </div>
 
   <div class="note">
-    <p><strong>Community-first funding.</strong> openSUSE prioritises events that are affordable and open to the public. Commercial conferences with high entry fees, closed attendance, or a mainly vendor-showcase programme are unlikely to be funded.</p>
+    <p><strong>Community-first funding.</strong> Affordable, open events come first. Commercial conferences with high fees or closed attendance are unlikely to be funded.</p>
     <label class="ack"><input type="checkbox" name="ack3"> Acknowledge</label>
   </div>
 </section>
@@ -257,9 +257,9 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
 <section class="card rule-2">
   <h2>Personal information</h2>
   <div class="grid">
-    <label class="f"><span class="lab">Name <span class="req">*</span></span><input type="text" name="name" autocomplete="name"></label>
-    <label class="f"><span class="lab">Email <span class="req">*</span></span><input type="email" name="email" autocomplete="email"></label>
-    <label class="f"><span class="lab">Relationship with openSUSE <span class="req">*</span></span>
+    <label class="f"><span class="lab">Name</span><input type="text" name="name" autocomplete="name"></label>
+    <label class="f"><span class="lab">Email</span><input type="email" name="email" autocomplete="email"></label>
+    <label class="f"><span class="lab">Relationship with openSUSE</span>
       <select name="relationship">
         <option value="">Select…</option>
         <option>Contributor (packaging, code, infra)</option>
@@ -270,12 +270,11 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
         <option>Employed by a company working with openSUSE</option>
       </select>
     </label>
-    <label class="f"><span class="lab">Membership status <span class="req">*</span></span>
+    <label class="f"><span class="lab">Membership status</span>
       <select name="member"><option value="">Select…</option><option>openSUSE Member</option><option>Membership application in progress</option><option>Not a member</option></select>
     </label>
-    <label class="f"><span class="lab">Phone / messaging contact</span><input type="tel" name="phone"></label>
-    <label class="f"><span class="lab">Link to your user page or contribution history <span class="req">*</span></span><span class="hint">Wiki page, OBS home project, GitLab profile or similar</span><input type="url" name="profile" placeholder="https://"></label>
-    <label class="f full"><span class="lab">Other co-requesters</span><span class="hint">Names of other contributors requesting for the same event, so requests are reviewed together</span><input type="text" name="others"></label>
+    <label class="f"><span class="lab">Link to your user page or contribution history</span><span class="hint">Wiki page, OBS home project, GitLab profile or similar</span><input type="url" name="profile" placeholder="https://"></label>
+    <label class="f"><span class="lab">Other co-requesters</span><span class="hint">Others requesting for the same event, so reviews happen together</span><input type="text" name="others"></label>
   </div>
 </section>
 
@@ -283,56 +282,56 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
 <section class="card rule-3">
   <h2>Event information</h2>
   <div class="grid">
-    <label class="f"><span class="lab">Event name <span class="req">*</span></span><input type="text" name="event"></label>
-    <label class="f"><span class="lab">Location <span class="req">*</span></span><input type="text" name="location" placeholder="City, country"></label>
-    <label class="f"><span class="lab">Start date <span class="req">*</span></span><input type="date" name="start"></label>
-    <label class="f"><span class="lab">End date <span class="req">*</span></span><input type="date" name="end"></label>
-    <label class="f"><span class="lab">Event website <span class="req">*</span></span><input type="url" name="website" placeholder="https://"></label>
-    <label class="f full"><span class="lab">One-line description <span class="req">*</span></span><input type="text" name="eventdesc" placeholder="e.g. annual volunteer-run FOSS conference, two tracks"></label>
+    <label class="f"><span class="lab">Event name</span><input type="text" name="event"></label>
+    <label class="f"><span class="lab">Location</span><input type="text" name="location" placeholder="City, country"></label>
+    <label class="f"><span class="lab">Start date</span><input type="date" name="start"></label>
+    <label class="f"><span class="lab">End date</span><input type="date" name="end"></label>
+    <label class="f"><span class="lab">Event website</span><input type="url" name="website" placeholder="https://"></label>
+    <label class="f full"><span class="lab">One-line description</span><input type="text" name="eventdesc" placeholder="e.g. annual volunteer-run FOSS conference, two tracks"></label>
   </div>
 </section>
 
 <!-- 4. AUDIENCE -->
 <section class="card rule-4">
   <h2>Audience and outreach</h2>
-  <p class="sub">Who is in the room, and what is the plan for reaching them. A small room of beginners is often worth more than a large room of people already running Linux.</p>
+  <p class="sub">Who is in the room, and the plan for reaching them.</p>
 
   <div class="grid">
-    <label class="f"><span class="lab">Expected attendance <span class="req">*</span></span><span class="hint">Total headcount across all days, organiser's figure or last year's</span><input type="number" name="attendees" min="0" step="1" placeholder="e.g. 400"></label>
-    <label class="f"><span class="lab">People you expect to speak with directly <span class="req">*</span></span><span class="hint">Realistic booth or session conversations, not footfall</span><input type="number" name="reach" min="0" step="1"></label>
+    <label class="f"><span class="lab">Expected attendance</span><span class="hint">Total headcount, organiser's figure or last year's</span><input type="number" name="attendees" min="0" step="1" placeholder="e.g. 400"></label>
+    <label class="f"><span class="lab">People you expect to speak with</span><span class="hint">Realistic conversations, not footfall</span><input type="number" name="reach" min="0" step="1"></label>
   </div>
 
   <fieldset>
-    <legend>Audience mix <span class="req">*</span> <span class="hint" style="font-weight:400">Tick all that apply.</span></legend>
-    <div class="opts">
-      <label class="opt"><input type="checkbox" name="aud" value="Newcomers"><span><strong>Newcomers</strong><small>No Linux experience — people who may be switching from Windows or macOS</small></span></label>
-      <label class="opt"><input type="checkbox" name="aud" value="Beginners"><span><strong>Beginners</strong><small>Using Linux on a desktop, another distribution, curious about openSUSE</small></span></label>
-      <label class="opt"><input type="checkbox" name="aud" value="Intermediate users"><span><strong>Intermediate</strong><small>Comfortable users, home lab, self-hosting, some sysadmin work</small></span></label>
-      <label class="opt"><input type="checkbox" name="aud" value="Experts"><span><strong>Experts</strong><small>Sysadmins, SREs, infrastructure and enterprise Linux people</small></span></label>
-      <label class="opt"><input type="checkbox" name="aud" value="Developers / packagers"><span><strong>Developers / packagers</strong><small>Potential contributors to OBS, Tumbleweed, Leap or upstream</small></span></label>
+    <legend>Audience mix <span class="hint" style="font-weight:400">Tick all that apply.</span></legend>
+    <div class="opts grid2">
+      <label class="opt"><input type="checkbox" name="aud" value="Newcomers"><span><strong>Newcomers</strong><small>No Linux experience</small></span></label>
+      <label class="opt"><input type="checkbox" name="aud" value="Beginners"><span><strong>Beginners</strong><small>Desktop Linux users, curious about openSUSE</small></span></label>
+      <label class="opt"><input type="checkbox" name="aud" value="Intermediate users"><span><strong>Intermediate</strong><small>Home lab, self-hosting, some sysadmin</small></span></label>
+      <label class="opt"><input type="checkbox" name="aud" value="Experts"><span><strong>Experts</strong><small>Sysadmins, SREs, enterprise Linux</small></span></label>
+      <label class="opt"><input type="checkbox" name="aud" value="Developers / packagers"><span><strong>Developers / packagers</strong><small>Potential OBS / distro contributors</small></span></label>
       <label class="opt"><input type="checkbox" name="aud" value="Students"><span><strong>Students</strong><small>Students and academia</small></span></label>
-      <label class="opt"><input type="checkbox" name="aud" value="General public"><span><strong>General public</strong><small>Non-technical visitors, families, makers</small></span></label>
+      <label class="opt"><input type="checkbox" name="aud" value="General public"><span><strong>General public</strong><small>Families, makers, non-technical</small></span></label>
     </div>
   </fieldset>
 
-  <label class="f"><span class="lab">Primary audience <span class="req">*</span></span><span class="hint">If you had to pick one group this event is really for</span>
+  <label class="f"><span class="lab">Primary audience</span>
     <select name="audmain"><option value="">Select…</option><option>Newcomers</option><option>Beginners</option><option>Intermediate users</option><option>Experts</option><option>Developers / packagers</option><option>Students</option><option>General public</option></select>
   </label>
 
-  <label class="f"><span class="lab">Outreach plan <span class="req">*</span></span><span class="hint">How will you actually reach people, before, during and after? Announcements, local press or podcasts, social posts, a demo machine, install help, a follow-up meetup, collecting contacts for the local group.</span><textarea name="outreach"></textarea></label>
+  <label class="f"><span class="lab">Outreach plan</span><span class="hint">How will you reach people before, during and after?</span><textarea name="outreach"></textarea></label>
 
-  <label class="f"><span class="lab">Follow-up plan <span class="req">*</span></span><span class="hint">How will you follow up with people you meet? A booth that hands out stickers and nothing else rarely produces contributors.</span><textarea name="followup"></textarea></label>
+  <label class="f"><span class="lab">Follow-up plan</span><textarea name="followup"></textarea></label>
 </section>
 
 <!-- 5. LOCAL COMMUNITY -->
 <section class="card rule-1">
   <h2>Local community</h2>
   <fieldset>
-    <legend>Is there an existing Linux user group or openSUSE group in the area? <span class="req">*</span></legend>
+    <legend>An openSUSE group or LUG in the area?</legend>
     <div class="opts">
-      <label class="opt"><input type="radio" name="lug" value="Active openSUSE group"><span>Yes — an active openSUSE group or local community</span></label>
-      <label class="opt"><input type="radio" name="lug" value="General LUG"><span>Yes — a general Linux user group or FOSS community, not openSUSE-specific</span></label>
-      <label class="opt"><input type="radio" name="lug" value="Dormant group"><span>There was one, but it is dormant</span></label>
+      <label class="opt"><input type="radio" name="lug" value="Active openSUSE group"><span>Active openSUSE group</span></label>
+      <label class="opt"><input type="radio" name="lug" value="General LUG"><span>General LUG / FOSS community</span></label>
+      <label class="opt"><input type="radio" name="lug" value="Dormant group"><span>Was one, now dormant</span></label>
       <label class="opt"><input type="radio" name="lug" value="None"><span>None</span></label>
     </div>
   </fieldset>
@@ -344,104 +343,104 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
   <h2>You and your team</h2>
 
   <fieldset>
-    <legend>Your advocacy experience <span class="req">*</span></legend>
+    <legend>Your advocacy experience</legend>
     <div class="opts">
-      <label class="opt"><input type="radio" name="exp" value="First-time advocate"><span><strong>First-time advocate</strong><small>New to representing openSUSE — welcome, say so and we will pair you up</small></span></label>
-      <label class="opt"><input type="radio" name="exp" value="Existing advocate"><span><strong>Existing advocate</strong><small>Active in the community, have not run a booth before</small></span></label>
-      <label class="opt"><input type="radio" name="exp" value="Ran a booth before"><span><strong>Have run a booth before</strong><small>Link a past event report below if you have one</small></span></label>
-      <label class="opt"><input type="radio" name="exp" value="Regular booth lead"><span><strong>Regular booth lead</strong><small>Run openSUSE stands routinely</small></span></label>
+      <label class="opt"><input type="radio" name="exp" value="First-time advocate"><span><strong>First-time advocate</strong><small>New to representing openSUSE — we will pair you up</small></span></label>
+      <label class="opt"><input type="radio" name="exp" value="Existing advocate"><span><strong>Existing advocate</strong><small>Active, but no booth yet</small></span></label>
+      <label class="opt"><input type="radio" name="exp" value="Ran a booth before"><span><strong>Ran a booth before</strong><small>Link a past report below if you have one</small></span></label>
+      <label class="opt"><input type="radio" name="exp" value="Regular booth lead"><span><strong>Regular booth lead</strong></span></label>
     </div>
   </fieldset>
   <label class="f"><span class="lab">Link to a past event report or photos</span><input type="url" name="pastreport" placeholder="https://"></label>
 
   <div class="grid">
-    <label class="f"><span class="lab">How many people will help you at the event? <span class="req">*</span></span><span class="hint">Confirmed helpers, including you. A stand needs at least two to stay open all day.</span><input type="number" name="helpers" min="1" step="1" value="1"></label>
-    <label class="f"><span class="lab">Are they confirmed?</span><select name="helpconf"><option value="">Select…</option><option>All confirmed</option><option>Some confirmed</option><option>Still looking for helpers</option></select></label>
+    <label class="f"><span class="lab">Helpers (including you)</span><span class="hint">A stand needs at least two to stay open all day.</span><input type="number" name="helpers" min="1" step="1" value="1"></label>
+    <label class="f"><span class="lab">Confirmed?</span><select name="helpconf"><option value="">Select…</option><option>All confirmed</option><option>Some confirmed</option><option>Still looking for helpers</option></select></label>
   </div>
 
   <fieldset>
-    <legend>How do you contribute to openSUSE? <span class="req">*</span> <span class="hint" style="font-weight:400">Tick all that apply.</span></legend>
-    <div class="opts">
+    <legend>How do you contribute? <span class="hint" style="font-weight:400">Tick all that apply.</span></legend>
+    <div class="opts grid2">
       <label class="opt"><input type="checkbox" name="contrib" value="Packaging"><span>Packaging / OBS</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="Development"><span>Development — tooling, distribution, upstream</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="Development"><span>Development / upstream</span></label>
       <label class="opt"><input type="checkbox" name="contrib" value="Documentation"><span>Documentation</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="Translation"><span>Translation and localisation</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="QA"><span>QA, testing, bug triage</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="Infrastructure"><span>Infrastructure and sysadmin</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="Design"><span>Design and artwork</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="Advocacy"><span>Advocacy, events, local community</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="Support"><span>Forums, mailing list or chat support</span></label>
-      <label class="opt"><input type="checkbox" name="contrib" value="Not yet contributing"><span>Not contributing yet — this would be my start</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="Translation"><span>Translation</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="QA"><span>QA / bug triage</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="Infrastructure"><span>Infrastructure</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="Design"><span>Design / artwork</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="Advocacy"><span>Advocacy / events</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="Support"><span>Forums / chat support</span></label>
+      <label class="opt"><input type="checkbox" name="contrib" value="Not yet contributing"><span>Not yet — this is my start</span></label>
     </div>
   </fieldset>
-  <label class="f"><span class="lab">Briefly, what have you worked on? <span class="req">*</span></span><span class="hint">A package name, a wiki page, a meetup you ran. One or two lines is enough.</span><textarea name="contribdetail" style="min-height:64px"></textarea></label>
+  <label class="f"><span class="lab">What have you worked on?</span><span class="hint">A package, wiki page or meetup — one or two lines.</span><textarea name="contribdetail" style="min-height:48px"></textarea></label>
 </section>
 
 <!-- 7. COMMUNITY CHARACTER -->
 <section class="card rule-3">
   <h2>Community character of the event</h2>
-  <p class="sub">This is the part the reviewers weigh most heavily. It decides whether we fund at all, before we look at the amount.</p>
+  <p class="sub">What reviewers weigh most heavily — it decides whether we fund at all.</p>
 
   <fieldset>
-    <legend>Who organises the event? <span class="req">*</span></legend>
+    <legend>Who organises the event?</legend>
     <div class="opts">
-      <label class="opt"><input type="radio" name="organiser" value="Volunteer group"><span>Volunteer or community group, non-profit</span></label>
-      <label class="opt"><input type="radio" name="organiser" value="Non-profit"><span>Foundation, user group or registered non-profit</span></label>
-      <label class="opt"><input type="radio" name="organiser" value="Public body"><span>University, library or other public body</span></label>
-      <label class="opt"><input type="radio" name="organiser" value="Company, community-run"><span>A company, but the event is run as a community event</span></label>
-      <label class="opt"><input type="radio" name="organiser" value="Commercial operator"><span>Commercial conference organiser or trade-show operator</span></label>
+      <label class="opt"><input type="radio" name="organiser" value="Volunteer group"><span>Volunteer / community group</span></label>
+      <label class="opt"><input type="radio" name="organiser" value="Non-profit"><span>Foundation / non-profit</span></label>
+      <label class="opt"><input type="radio" name="organiser" value="Public body"><span>University / public body</span></label>
+      <label class="opt"><input type="radio" name="organiser" value="Company, community-run"><span>Company, but community-run</span></label>
+      <label class="opt"><input type="radio" name="organiser" value="Commercial operator"><span>Commercial operator</span></label>
     </div>
   </fieldset>
 
   <div class="grid">
-    <label class="f"><span class="lab">Cheapest public ticket price <span class="req">*</span></span><span class="hint">Cheapest ticket a member of the public can actually buy. Enter 0 for free events.</span><input type="number" name="ticket" min="0" step="1" value="0"></label>
+    <label class="f"><span class="lab">Cheapest public ticket</span><span class="hint">0 for free events.</span><input type="number" name="ticket" min="0" step="1" value="0"></label>
     <label class="f"><span class="lab">Currency</span><select name="currency"><option>EUR</option><option>USD</option><option>GBP</option><option>Other</option></select></label>
   </div>
 
   <fieldset>
-    <legend>Are free or discounted community tickets available? <span class="req">*</span></legend>
+    <legend>Free or discounted community tickets?</legend>
     <div class="opts">
-      <label class="opt"><input type="radio" name="freetix" value="Free for everyone"><span>The event is free for everyone</span></label>
-      <label class="opt"><input type="radio" name="freetix" value="Discounted community tickets"><span>Free or discounted tickets exist for students, contributors or those who ask</span></label>
-      <label class="opt"><input type="radio" name="freetix" value="Only paid tickets"><span>Only full-price tickets are available</span></label>
+      <label class="opt"><input type="radio" name="freetix" value="Free for everyone"><span>Free for everyone</span></label>
+      <label class="opt"><input type="radio" name="freetix" value="Discounted community tickets"><span>Free / discounted for students, contributors, or those who ask</span></label>
+      <label class="opt"><input type="radio" name="freetix" value="Only paid tickets"><span>Only full-price tickets</span></label>
     </div>
   </fieldset>
 
   <fieldset>
-    <legend>Which of these apply? <span class="hint" style="font-weight:400">Tick everything that is true.</span></legend>
-    <div class="opts">
-      <label class="opt"><input type="checkbox" name="fl" value="Code of conduct"><span>The event has a published, enforced code of conduct</span></label>
-      <label class="opt"><input type="checkbox" name="fl" value="Talks published openly"><span>Talks are recorded and published openly and for free afterwards</span></label>
-      <label class="opt"><input type="checkbox" name="fl" value="Open CfP"><span>The programme comes from an open call for papers, not paid speaking slots</span></label>
-      <label class="opt"><input type="checkbox" name="fl" value="FOSS focused"><span>The event is focused on free and open source software</span></label>
-      <label class="opt"><input type="checkbox" name="fl" value="openSUSE presence planned"><span>There will be a visible openSUSE presence: talk, booth, workshop or BoF</span></label>
-      <label class="opt"><input type="checkbox" name="fl" value="First time attending"><span>openSUSE has not been present at this event before</span></label>
-      <label class="opt"><input type="checkbox" name="fl" value="Underrepresented region"><span>It is in a region where the openSUSE community is small or growing</span></label>
-      <label class="opt"><input type="checkbox" name="fl" value="Other sponsors"><span>Other sponsors or an employer already cover part of the cost</span></label>
+    <legend>Which of these apply? <span class="hint" style="font-weight:400">Tick all that are true.</span></legend>
+    <div class="opts grid2">
+      <label class="opt"><input type="checkbox" name="fl" value="Code of conduct"><span>Code of conduct</span></label>
+      <label class="opt"><input type="checkbox" name="fl" value="Talks published openly"><span>Talks published openly</span></label>
+      <label class="opt"><input type="checkbox" name="fl" value="Open CfP"><span>Open CfP</span></label>
+      <label class="opt"><input type="checkbox" name="fl" value="FOSS focused"><span>FOSS-focused</span></label>
+      <label class="opt"><input type="checkbox" name="fl" value="openSUSE presence planned"><span>openSUSE presence planned</span></label>
+      <label class="opt"><input type="checkbox" name="fl" value="First time attending"><span>First time attending</span></label>
+      <label class="opt"><input type="checkbox" name="fl" value="Underrepresented region"><span>Underrepresented region</span></label>
+      <label class="opt"><input type="checkbox" name="fl" value="Other sponsors"><span>Other sponsors cover part</span></label>
     </div>
   </fieldset>
 
-  <label class="f"><span class="lab">Where does the ticket money go? <span class="req">*</span></span><span class="hint">E.g. venue hire and catering for a volunteer-run conference, versus profit for an organiser. Write "free event" if it does not apply.</span><textarea name="wheremoney"></textarea></label>
+  <label class="f"><span class="lab">Where does the ticket money go?</span><span class="hint">Write "free event" if it does not apply.</span><textarea name="wheremoney"></textarea></label>
 </section>
 
 <!-- 8. INVOLVEMENT -->
 <section class="card rule-4">
   <h2>Your involvement and justification</h2>
   <fieldset>
-    <legend>What will you be doing there? <span class="req">*</span></legend>
-    <div class="opts">
-      <label class="opt"><input type="checkbox" name="inv" value="Speaking (talk accepted)"><span>Speaking — talk already accepted</span></label>
-      <label class="opt"><input type="checkbox" name="inv" value="Speaking (submitted)"><span>Speaking — submitted, not yet accepted</span></label>
-      <label class="opt"><input type="checkbox" name="inv" value="Staffing a booth"><span>Staffing the openSUSE booth</span></label>
-      <label class="opt"><input type="checkbox" name="inv" value="Running a workshop / BoF"><span>Running a workshop, hack session or BoF</span></label>
-      <label class="opt"><input type="checkbox" name="inv" value="Organising the event"><span>Organising or co-organising the event</span></label>
+    <legend>What will you be doing there?</legend>
+    <div class="opts grid2">
+      <label class="opt"><input type="checkbox" name="inv" value="Speaking (talk accepted)"><span>Speaking — accepted</span></label>
+      <label class="opt"><input type="checkbox" name="inv" value="Speaking (submitted)"><span>Speaking — submitted</span></label>
+      <label class="opt"><input type="checkbox" name="inv" value="Staffing a booth"><span>Staffing the booth</span></label>
+      <label class="opt"><input type="checkbox" name="inv" value="Running a workshop / BoF"><span>Workshop / BoF</span></label>
+      <label class="opt"><input type="checkbox" name="inv" value="Organising the event"><span>Organising</span></label>
       <label class="opt"><input type="checkbox" name="inv" value="Attending only"><span>Attending only</span></label>
     </div>
   </fieldset>
 
   <label class="f"><span class="lab">Talk or session title and link</span><input type="text" name="talk"></label>
-  <label class="f"><span class="lab">Why should openSUSE support this? <span class="req">*</span></span><span class="hint">What does the project get back? New contributors, visibility in a region, a partnership, users migrating? Be concrete.</span><textarea name="why"></textarea></label>
-  <label class="f"><span class="lab">What happens if the request is only partly funded, or declined? <span class="req">*</span></span><span class="hint">Can you still go? Would a cheaper option work? This helps spread a limited budget.</span><textarea name="ifdeclined"></textarea></label>
+  <label class="f"><span class="lab">Why should openSUSE support this?</span><span class="hint">New contributors, visibility, partnerships — be concrete.</span><textarea name="why"></textarea></label>
+  <label class="f"><span class="lab">If only partly funded, or declined?</span><textarea name="ifdeclined"></textarea></label>
 </section>
 
 <!-- 9. BOOTH PLAN -->
@@ -450,30 +449,30 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
   <p class="sub">Skip if you are not running a stand.</p>
   <fieldset>
     <legend>What will be on the stand? <span class="hint" style="font-weight:400">Tick all that apply.</span></legend>
-    <div class="opts">
-      <label class="opt"><input type="checkbox" name="booth" value="Demo machines"><span>Live demo machines — Tumbleweed, Leap, Aeon or MicroOS</span></label>
-      <label class="opt"><input type="checkbox" name="booth" value="Install help"><span>Install help or an install fest</span></label>
-      <label class="opt"><input type="checkbox" name="booth" value="Hardware showcase"><span>Hardware showcase — ARM boards, servers, unusual devices</span></label>
-      <label class="opt"><input type="checkbox" name="booth" value="Lightning talks"><span>Short talks or demos at the stand</span></label>
-      <label class="opt"><input type="checkbox" name="booth" value="Contributor onboarding"><span>Contributor onboarding — help people file a bug or build a package on the spot</span></label>
-      <label class="opt"><input type="checkbox" name="booth" value="Merchandise"><span>Stickers, flyers and merchandise</span></label>
-      <label class="opt"><input type="checkbox" name="booth" value="Shared stand"><span>Shared stand with other FOSS projects</span></label>
+    <div class="opts grid2">
+      <label class="opt"><input type="checkbox" name="booth" value="Demo machines"><span>Demo machines</span></label>
+      <label class="opt"><input type="checkbox" name="booth" value="Install help"><span>Install help / fest</span></label>
+      <label class="opt"><input type="checkbox" name="booth" value="Hardware showcase"><span>Hardware showcase</span></label>
+      <label class="opt"><input type="checkbox" name="booth" value="Lightning talks"><span>Lightning talks</span></label>
+      <label class="opt"><input type="checkbox" name="booth" value="Contributor onboarding"><span>Contributor onboarding</span></label>
+      <label class="opt"><input type="checkbox" name="booth" value="Merchandise"><span>Merchandise</span></label>
+      <label class="opt"><input type="checkbox" name="booth" value="Shared stand"><span>Shared FOSS stand</span></label>
     </div>
   </fieldset>
-  <label class="f"><span class="lab">Describe the stand</span><span class="hint">Size, staffing across the days, what you are borrowing versus what you need, and who owns the hardware.</span><textarea name="boothplan"></textarea></label>
+  <label class="f"><span class="lab">Describe the stand</span><span class="hint">Size, staffing, borrowed vs. needed hardware.</span><textarea name="boothplan"></textarea></label>
 </section>
 
 <!-- 10. SPONSORSHIP -->
 <section class="card rule-2">
   <h2>Sponsorship requested</h2>
-  <p class="sub">Just the sponsorship itself. Do not include personal travel or accommodation — those go through the travel support programme.</p>
+  <p class="sub">Just the sponsorship — no personal travel, that goes through the travel support programme.</p>
   <div class="grid">
-    <label class="f"><span class="lab">Total amount asked for <span class="req">*</span></span><input type="number" name="ask" min="0" step="1" value="0"></label>
+    <label class="f"><span class="lab">Total amount asked for</span><input type="number" name="ask" min="0" step="1" value="0"></label>
     <label class="f"><span class="lab">Currency</span><select name="currency2"><option>EUR</option><option>USD</option><option>GBP</option><option>Other</option></select></label>
   </div>
-  <label class="f"><span class="lab">Sponsorship level or package name <span class="req">*</span></span><span class="hint">The organiser's tier name if there is one, e.g. "Community / Bronze / Silver", or "stand fee only"</span><input type="text" name="tier"></label>
-  <label class="f"><span class="lab">What does that package include? <span class="req">*</span></span><span class="hint">Stand space, tickets, logo placement, talk slot, power and network, table and chairs — and anything openSUSE would be expected to provide in return.</span><textarea name="includes" style="min-height:72px"></textarea></label>
-  <label class="f"><span class="lab">Is any of it already covered elsewhere?</span><input type="text" name="covered" placeholder="e.g. employer covers the stand fee, co-sponsor splits it"></label>
+  <label class="f"><span class="lab">Sponsorship level or package</span><span class="hint">e.g. "Community / Bronze", or "stand fee only"</span><input type="text" name="tier"></label>
+  <label class="f"><span class="lab">What does it include?</span><textarea name="includes" style="min-height:56px"></textarea></label>
+  <label class="f"><span class="lab">Already covered elsewhere?</span><input type="text" name="covered" placeholder="e.g. employer covers the stand fee"></label>
 </section>
 
 <!-- ASSESSMENT -->
@@ -498,7 +497,7 @@ footer{color:var(--muted);font-size:12.5px;margin-top:26px;text-align:center}
 
 </form>
 
-<footer>Questions before submitting? Ask on the openSUSE project mailing list or in the events channel. Nothing is sent anywhere until you press Send — and then only to the review addresses.</footer>
+<footer>Questions? Ask on the openSUSE project mailing list or in the events channel. Nothing is sent until you press Send — and then only to the review addresses.</footer>
 </div>
 
 <script>
@@ -656,12 +655,13 @@ var CONFIG = {
     var L = [];
     L.push('openSUSE event request — ' + (val('event') || '(event)'));
     L.push('Type: ' + val('reqtype'));
-    L.push('Requester: ' + val('name') + ' <' + val('email') + '>  ·  ' + (val('relationship') || '—') + '  ·  Member: ' + (val('member') || '—'));
+    L.push('Requester: ' + (val('name') || '—') + ' <' + (val('email') || '—') + '>  ·  ' + (val('relationship') || '—') + '  ·  Member: ' + (val('member') || '—'));
     L.push('Profile: ' + (val('profile') || '—'));
+    if(val('others')) L.push('Co-requesters: ' + val('others'));
     L.push('');
     L.push('Event: ' + (val('event') || '—') + ', ' + (val('location') || '—') + '  ·  ' + (val('start') || '?') + ' → ' + (val('end') || '?'));
     L.push('Website: ' + (val('website') || '—'));
-    L.push(val('eventdesc') || '');
+    if(val('eventdesc')) L.push(val('eventdesc'));
     L.push('Expected attendance: ' + (val('attendees') || '?') + '  ·  expect to speak with: ' + (val('reach') || '?'));
     L.push('Audience: ' + (checks('aud').join('; ') || '—') + '  ·  primary: ' + (val('audmain') || '—'));
     L.push('Local group: ' + (val('lug') || '—') + (val('lugname') ? ('  ·  ' + val('lugname')) : ''));
@@ -671,7 +671,7 @@ var CONFIG = {
     L.push('Experience: ' + (val('exp') || '—') + (val('pastreport') ? ('  ·  ' + val('pastreport')) : ''));
     L.push('Team: ' + (val('helpers') || '?') + ' people (' + (val('helpconf') || '—') + ')');
     L.push('Contributes as: ' + (checks('contrib').join('; ') || '—'));
-    L.push('  ' + (val('contribdetail') || ''));
+    if(val('contribdetail')) L.push('  ' + val('contribdetail'));
     L.push('Booth plan: ' + (checks('booth').join('; ') || '—'));
     if(val('boothplan')) L.push('  ' + val('boothplan'));
     L.push('Involvement: ' + (checks('inv').join('; ') || '—') + (val('talk') ? ('  ·  ' + val('talk')) : ''));
@@ -730,19 +730,12 @@ var CONFIG = {
   });
   document.getElementById('send').addEventListener('click', function(){
     var btn = this;
-    var missing = [];
-    if(!val('name')) missing.push('your name');
-    if(!val('email')) missing.push('your email');
-    if(!val('event')) missing.push('the event name');
-    if(!['ack1', 'ack2', 'ack3'].every(function(k){ return form.elements[k].checked; })) missing.push('the three acknowledgements');
-    if(missing.length){ saved.textContent = 'Still needed: ' + missing.join(', '); return; }
-
     var body = buildSummary();
     out.hidden = false; out.textContent = body;
     btn.disabled = true; saved.textContent = 'Sending…';
 
     var payload = {
-      _subject: CONFIG.SUBJECT_PREFIX + ': ' + val('event') + ' — ' + val('name'),
+      _subject: CONFIG.SUBJECT_PREFIX + ': ' + (val('event') || '(event)') + ' — ' + (val('name') || 'anonymous'),
       _template: 'box',
       _captcha: 'false',
       name: val('name'),

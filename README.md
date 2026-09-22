@@ -148,15 +148,14 @@ travel intentions.
 
 ## Logo and toolbar assets
 
-The button mark in the page header and universe toolbar, and the toolbar
-markup itself, are hand-built approximations — the sandbox used to write this
-page blocks remote images and scripts, so the real assets could not be pulled
-in. When deploying on GitHub, swap in the official mark served at
-`https://static.opensuse.org/favicon.svg` and align the masthead with the
-actual header in the [openSUSE/get-o-o repo](https://github.com/openSUSE/get-o-o),
-which uses the shared Chameleon theme. That keeps this page in sync with the
-rest of openSUSE's sites as the theme changes, and avoids shipping an
-approximated logo.
+The button mark in the universe toolbar is the official artwork: the repo's
+`favicon.svg` (the `button-colour.svg` mark), loaded as a sibling file, so it
+works both on GitHub Pages and from `file://`. Commit it alongside
+`index.html` — if it is missing, the toolbar shows a broken image. The toolbar
+markup itself is still a hand-built stand-in; to stay in sync with the rest of
+openSUSE's sites, align it with the actual header in the
+[openSUSE/get-o-o repo](https://github.com/openSUSE/get-o-o), which uses the
+shared Chameleon theme.
 
 ---
 
