@@ -146,6 +146,20 @@ travel intentions.
 
 ---
 
+## Logo and toolbar assets
+
+The button mark in the page header and universe toolbar, and the toolbar
+markup itself, are hand-built approximations — the sandbox used to write this
+page blocks remote images and scripts, so the real assets could not be pulled
+in. When deploying on GitHub, swap in the official mark served at
+`https://static.opensuse.org/favicon.svg` and align the masthead with the
+actual header in the [openSUSE/get-o-o repo](https://github.com/openSUSE/get-o-o),
+which uses the shared Chameleon theme. That keeps this page in sync with the
+rest of openSUSE's sites as the theme changes, and avoids shipping an
+approximated logo.
+
+---
+
 ## Tuning the assessment
 
 The scoring lives in one function, `assess()`, near the bottom of the file. Each
