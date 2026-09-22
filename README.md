@@ -106,8 +106,8 @@ spam filtering rather than personal mailboxes.
 ## 5. Test before announcing it
 
 - Submit a complete request and confirm every recipient receives it.
-- Submit a deliberately weak one — commercial organiser, €400 ticket, one person,
-  no outreach plan — and check the assessment panel lands in the red band.
+- Submit a deliberately weak one — no audience, no local group, stickers-only
+  stand, days away — and check the assessment panel lands in the red band.
 - Try it on a phone; the layout is responsive and the panel sticks to the bottom.
 - Switch your OS to dark mode and reload.
 - Block the request in devtools and confirm the failure message appears telling
@@ -165,7 +165,7 @@ The scoring lives in one function, `assess()`, near the bottom of the file. Each
 signal is a single line:
 
 ```js
-if(fl.indexOf('FOSS focused')>-1) add('pos','FOSS-focused programme',2);
+if(bo.indexOf('Contributor onboarding') > -1) add('pos','Contributor onboarding at the stand',2);
 ```
 
 `add(kind, label, points)` — `kind` is `pos`, `neg` or `neu` and only controls the
@@ -174,9 +174,9 @@ colour of the bullet. Change the weight, or add a signal, in one place.
 The band thresholds are directly below:
 
 ```js
-if(s>=26){...'Strong fit — full support plausible';}
-else if(s>=16){...'Good fit — partial funding likely';}
-else if(s>=8){...'Borderline — in-kind support or materials only';}
+if(s>=10){...'Strong fit — full support plausible';}
+else if(s>=7){...'Good fit — partial funding likely';}
+else if(s>=4){...'Borderline — in-kind support or materials only';}
 else if(s>=0){...'Needs a stronger community case';}
 else {...'Poor fit — likely declined as not community-driven';}
 ```
